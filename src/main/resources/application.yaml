@@ -1,0 +1,12 @@
+kafka:
+  bootstrapServer: sandbox.hortonworks.com:6667
+  acks: all
+  retries: 0
+  batchSize: 16384
+  lingerMs: 0
+  keySerializer: org.apache.kafka.common.serialization.StringSerializer
+  valueSerializer: org.apache.kafka.common.serialization.StringSerializer
+  blockOnBufferFull: true
+data:
+  directory: /root/documents/logs
+  topic: log1
